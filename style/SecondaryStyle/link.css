@@ -1,0 +1,36 @@
+
+.link{
+    grid-row: 1;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    margin: 4%;
+}
+.link > a{
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.link > a:hover{
+    color: var(--green-color);
+    transform: scale(1.09);
+}
+
+a,p{
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 3px 3px 5px #0000003a;
+    font-size: 1.12em;
+    margin: 9px;
+}
+
+@media screen and (max-width: 560px) {
+    .link > a{
+        font-size: 1.01rem;
+        word-wrap: break-word;
+    }
+}

@@ -1,0 +1,81 @@
+@import '/style/SecondaryStyle/rootFile.css';
+@import '/style/SecondaryStyle/footer.css';
+@import '/style/SecondaryStyle/link.css';
+
+html{
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+body{
+  height: 100vh;
+    display: grid;
+    grid-template-rows: minmax(20px, 30px) 1fr auto;
+    grid-template-columns: repeat(12, 1fr);
+    background-image: url('/images/stars.jpg');
+    backdrop-filter: blur(4px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--main-font);
+    margin: 0;
+}
+a{
+  color: white;
+}
+.frm{
+    display: flex;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    background-size: cover;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+.frm > form{
+  display: flex;
+  flex-flow: column;
+}
+#fname,
+ #lname,
+  #email{
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: var(--shadow-elevation-low);
+  height: 25px;
+}
+#note{
+  height: 120px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: var(--shadow-elevation-low);
+}
+#btn{
+  background-color: var(--green-color);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: var(--shadow-elevation-low);
+  color: whitesmoke;
+}
+#fname:focus,
+#lname:focus,
+  #email:focus,
+  #note:focus,
+  #btn:active{
+    transform: scale(1.04);
+    outline: none;
+}
+#descr{
+    margin: auto;
+    padding: 50px;
+}
+.footer{
+  grid-row: 3;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  background-color: #e0dad527;
+}

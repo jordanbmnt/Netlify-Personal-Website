@@ -1,0 +1,30 @@
+.iconBox{
+  display: flex;
+  flex-flow: row;
+  grid-row: 1;
+  grid-column: 11/12;
+}
+
+.footerIcons{
+  align-self: center;
+  width: 25px;
+  padding: 5px;
+}
+
+.footerIcons:hover{
+    transform: scale(1.1);
+}
+
+.footer > p{
+  align-self: center;
+  font-size: 13px;
+  grid-row: 1;
+  grid-column: 1/10;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer > p{
+      font-size: 11px;
+  }
+}
