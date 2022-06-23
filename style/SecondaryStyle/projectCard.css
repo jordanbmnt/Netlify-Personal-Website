@@ -24,6 +24,7 @@
   transform-style: preserve-3d;
   box-shadow: var(--shadow-elevation-medium);
   border-radius: 10px;
+  border: 7px solid white;
 }
 .projects:hover .projects-inner {
   transform: rotateY(180deg);

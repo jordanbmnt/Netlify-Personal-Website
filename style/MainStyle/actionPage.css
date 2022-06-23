@@ -1,0 +1,24 @@
+@import '/style/SecondaryStyle/link.css';
+@import '/style/SecondaryStyle/rootFile.css';
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url('/images/woman-5718089_1920.jpg');
+}
+div{
+    font-family: var(--main-font);
+    font-size: x-large;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    position: fixed;
+    right: 0;
+}
