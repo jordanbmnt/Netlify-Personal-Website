@@ -21,7 +21,7 @@
     </div>
 
     <div class="frm">
-        <form action="./actionPage.html">
+        <form name="myForm"  onsubmit="validateForm()">
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="fname" required> <br>
             <label for="fname">Last Name:</label>
@@ -47,5 +47,16 @@
     </footer>
 
     <script src="js/aboutScript.js"></script>
+    <script>
+        let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+        function validateForm() {
+        let x = document.forms["myForm"]["email"].value;
+        if (!regex.test(x)) {
+            alert("Name must be filled out");
+        }else{
+            window.open('./actionPage.html');
+        }
+}
+    </script>
 </body>
 </html>
