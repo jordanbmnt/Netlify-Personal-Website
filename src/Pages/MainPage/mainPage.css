@@ -1,0 +1,11 @@
+.main-page{
+  background: #1E1E1E;
+  background: linear-gradient(to bottom right, #f5f3f11a, #161d1d), #1E1E1E;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  color: white;
+}
