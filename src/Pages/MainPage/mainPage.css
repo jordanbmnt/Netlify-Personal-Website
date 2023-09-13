@@ -1,6 +1,6 @@
 .main-page{
   background: #1E1E1E;
-  background: linear-gradient(to bottom right, #f5f3f11a, #161d1d), #1E1E1E;
+  background: linear-gradient(to bottom right, #f5f3f11a, #101515), #0e0e0e;
   flex-flow: column;
   align-items: center;
   justify-content: center;
@@ -10,17 +10,30 @@
   color: white;
 }
 
+.heading-container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  z-index: 3;
+}
+
 h1{
   font-size: 75px;
   font-weight: 400;
   word-wrap: break-word;
   margin: 0px;
+  line-height: 0.85em;
 }
 
 h4{
   font-size: 15px;
   font-weight: 400;
-  word-wrap: break-word
+  word-wrap: break-word;
+  max-width: 900px;
+  margin: 30px auto 50px auto;
+  line-height: 1.2em;
 }
 
 #generate-button{
@@ -35,4 +48,21 @@ h4{
 
 #key-word{
   color: #F07164;
+}
+
+#main-earth{
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  aspect-ratio: 1;
+  right: 130px;
+  top: 50px;
+}
+
+#main-spaceman{
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  left: 240px;
+  bottom: 70px;
 }
