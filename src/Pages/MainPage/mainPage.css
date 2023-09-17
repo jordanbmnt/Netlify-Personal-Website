@@ -37,10 +37,12 @@ h4{
 }
 
 #generate-button{
+  z-index: 5;
   color: #F07164;
   border-color: #F07164;
   border-radius: 13px;
 }
+
 #generate-button:hover{
   color: #FFF;
   background-color: #F07164;
@@ -57,6 +59,7 @@ h4{
   aspect-ratio: 1;
   right: 130px;
   top: 50px;
+  mix-blend-mode: color-dodge;
 }
 
 #main-spaceman{
@@ -64,5 +67,23 @@ h4{
   z-index: 1;
   width: 200px;
   left: 240px;
-  bottom: 70px;
+  bottom: 80px;
+  mix-blend-mode: color-dodge;
+  animation: float infinite 2.5s alternate ease-in-out;
+}
+
+@keyframes float {
+  0%{
+    bottom: 80px;
+  }
+  100%{
+    bottom: 70px;
+  }
+}
+
+#bg{
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  mix-blend-mode: color-dodge;
 }

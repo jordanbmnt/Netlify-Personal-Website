@@ -3,6 +3,7 @@ import './mainPage.css'
 import { Button } from "@mui/material";
 import earth from "../../Images/planetEarth.png"
 import spaceMan from "../../Images/astronautThreeQuarterBackView.png"
+import darkBackground from "../../Images/darkMainBackground.png"
 
 export const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ export const MainPage = () => {
       <Button id="generate-button" variant="outlined">Generate</Button>
       <img id="main-earth" src={earth} alt="" />
       <img id="main-spaceman" src={spaceMan} alt="" />
+      <img id="bg" src={darkBackground} alt="" />
     </Container>
   )
 }
