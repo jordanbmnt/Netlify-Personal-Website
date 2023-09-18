@@ -4,10 +4,12 @@ import { Button } from "@mui/material";
 import earth from "../../Images/planetEarth.png"
 import spaceMan from "../../Images/astronautThreeQuarterBackView.png"
 import darkBackground from "../../Images/darkMainBackground.png"
+import { NavBar } from "../../Components/NavBar/NavBar";
 
 export const MainPage = () => {
   return (
     <Container sx={{display: 'flex'}} className='main-page'>
+      <NavBar/>
       <Container className="heading-container">
       <h1>I am Jordan M Beaumont</h1>
       <h1 id="key-word">Web developer.</h1>
