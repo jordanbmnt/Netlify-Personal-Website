@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 .main-page{
   background: #1E1E1E;
   background: linear-gradient(to bottom right, #f5f3f11a, #101515), #0e0e0e;
@@ -25,6 +28,8 @@ h1{
   word-wrap: break-word;
   margin: 0px;
   line-height: 0.85em;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(224, 216, 216);
 }
 
 h4{
@@ -34,13 +39,19 @@ h4{
   max-width: 900px;
   margin: 30px auto 50px auto;
   line-height: 1.2em;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(216, 204, 204);
+  padding: 10px;
+  margin-bottom: 22px;
 }
 
 #generate-button{
+  transition: 300ms;
   z-index: 5;
   color: #F07164;
   border-color: #F07164;
   border-radius: 13px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #generate-button:hover{
