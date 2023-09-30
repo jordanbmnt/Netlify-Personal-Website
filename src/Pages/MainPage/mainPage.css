@@ -80,21 +80,19 @@ h4{
   left: 240px;
   bottom: 80px;
   mix-blend-mode: color-dodge;
-  animation: float infinite 2.5s alternate ease-in-out;
+  animation: float infinite 3s ease-in-out;
 }
 
 @keyframes float {
-  0%{
-    bottom: 80px;
-  }
-  100%{
-    bottom: 70px;
-  }
+  0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); } 
 }
 
 #bg{
   position: absolute;
   width: 100vw;
   bottom: 0;
+  height: 250px;
   mix-blend-mode: color-dodge;
 }
