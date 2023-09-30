@@ -23,20 +23,24 @@ a{
 
 .left-arrow,
 .right-arrow{
+  transition: 600ms;
+  opacity: 0;
   height: 100vh;
   position: absolute;
   top: 0;
-  width: 100px;
+  width: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: pulse infinite 2s alternate;
+  background: linear-gradient(rgba(255, 255, 255, 0.152), rgba(255, 255, 255, 0.036));
+  border: 1px solid rgba(255, 255, 255, 0.226);
+  backdrop-filter: blur(6px);
+  z-index: 10;
 }
 
-@keyframes pulse {
-  to{
-    transform: scale(1.2);
-  }
+.left-arrow:hover,
+.right-arrow:hover{
+  opacity: 1;
 }
 
 .left-arrow{
