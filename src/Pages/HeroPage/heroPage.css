@@ -1,0 +1,18 @@
+.hero-page{
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  color: white;
+  position: relative;
+}
+
+#hero-cloud{
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  width: 500px;
+  left: 300px;
+}

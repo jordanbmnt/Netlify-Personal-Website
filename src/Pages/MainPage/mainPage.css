@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 .main-page{
-  background: #1E1E1E;
-  background: linear-gradient(to bottom right, #f5f3f11a, #101515), #0e0e0e;
   flex-flow: column;
   align-items: center;
   justify-content: center;
@@ -71,6 +69,7 @@ h4{
   right: 130px;
   top: 50px;
   mix-blend-mode: color-dodge;
+  /* mix-blend-mode:multiply ; */
 }
 
 #main-spaceman{

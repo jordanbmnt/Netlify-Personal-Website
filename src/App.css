@@ -1,3 +1,15 @@
+html{
+  overflow-y: scroll;
+  background: #1E1E1E;
+  background: linear-gradient(to bottom right, #f5f3f11a, #101515), #0e0e0e;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
+  overflow-y: scroll;
 }
