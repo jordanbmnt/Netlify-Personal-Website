@@ -6,15 +6,15 @@ export const NavBar = () => {
   return (
     <Container>
       <Container sx={{ display: "flex" }} className='nav-bar'>
-        <a href=''>Home</a>
-        <a href=''>About</a>
-        <a href=''>Contact</a>
+        <a href='https://google.com'>Home</a>
+        <a href='https://google.com'>About</a>
+        <a href='https://google.com'>Contact</a>
       </Container>
-      <nav className="left-arrow">
-    <ChevronLeft sx={{ fontSize: 40 }} />
+      <nav className='left-arrow'>
+        <ChevronLeft sx={{ fontSize: 40 }} />
       </nav>
-      <nav className="right-arrow">
-    <ChevronRight sx={{ fontSize: 40 }} />
+      <nav className='right-arrow'>
+        <ChevronRight sx={{ fontSize: 40 }} />
       </nav>
     </Container>
   );
