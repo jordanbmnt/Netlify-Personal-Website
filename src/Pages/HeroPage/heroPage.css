@@ -1,18 +1,27 @@
 .hero-page{
+  margin: 0;
+  color: white;
+  position: relative;
+  border: 1px solid white;
+}
+
+#content-box{
+  z-index: 3;
+}
+
+.hero-page, 
+#content-box{
   flex-flow: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   min-width: 100vw;
-  margin: 0;
-  color: white;
-  position: relative;
 }
 
-#hero-cloud{
+#spline-clouds{
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 0px;
-  z-index: 1;
-  width: 500px;
-  left: 300px;
+  top: 0;
+  z-index: 2;
 }
