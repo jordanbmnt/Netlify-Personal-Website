@@ -33,10 +33,11 @@ export const HeroPage = () => {
       className='hero-page'
     >
       <Container id='content-box'>
-        <Box
-          id='link-box'
-          sx={{ border: "1px solid white", height: "60vh", width: "50vw" }}
-        ></Box>
+        <Box id='link-box' sx={{ height: "60vh", width: "50vw" }}>
+          <Box className='link-element'></Box>
+          <Box className='link-element'></Box>
+          <Box className='link-element'></Box>
+        </Box>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde
           voluptatem illo eligendi veritatis quibusdam accusantium error
