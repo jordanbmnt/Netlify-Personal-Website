@@ -1,19 +1,21 @@
 .hero-page{
+  flex-flow: column;
   margin: 0;
   color: white;
   position: relative;
-  border: 1px solid white;
 }
 
 #content-box{
+  flex-flow: row;
+  margin: auto;
   z-index: 3;
 }
 
 .hero-page, 
 #content-box{
-  flex-flow: column;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100vh;
   min-width: 100vw;
 }
@@ -24,4 +26,12 @@
   position: absolute;
   top: 0;
   z-index: 2;
+}
+
+p{
+  width: 30vw;
+}
+
+#link-box{
+  border-radius: 13px;
 }

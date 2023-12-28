@@ -2,6 +2,7 @@ import { Container } from "@mui/system";
 import "./heroPage.css";
 import Spline from "@splinetool/react-spline";
 import { useRef, useState } from "react";
+import { Box } from "@mui/material";
 
 export const HeroPage = () => {
   const cloudOne = useRef();
@@ -17,13 +18,13 @@ export const HeroPage = () => {
     cloudThree.current = obj3;
 
     if (cloudOne.current) {
+      cloudOne.current.position.x += 600;
+      cloudTwo.current.position.x += 600;
+      cloudThree.current.position.x += 600;
       window.addEventListener("scroll", function () {
         setPos(Math.floor(this.scrollY - window.innerHeight));
-        cloudOne.current.position.x += 100;
+        // cloudOne.current.position.x += 100;
       });
-      // cloudOne.current.position.x += pos * 100;
-      // cloudTwo.current.position.x += pos * 100 * 3;
-      // cloudThree.current.position.x += pos * 100 * 4;
     }
   }
   return (
@@ -32,12 +33,23 @@ export const HeroPage = () => {
       className='hero-page'
     >
       <Container id='content-box'>
-        <h1>{pos}</h1>
+        <Box
+          id='link-box'
+          sx={{ border: "1px solid white", height: "60vh", width: "50vw" }}
+        ></Box>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde
+          voluptatem illo eligendi veritatis quibusdam accusantium error
+          praesentium iste nam labore repellat similique dolores architecto
+          neque ipsam optio quasi, adipisci minus quod qui quis nemo? Eos
+          voluptatem facilis quos consequatur, suscipit temporibus quod unde
+          placeat repudiandae cupiditate quia nostrum consequuntur.
+        </p>
       </Container>
       <Spline
         onLoad={onLoad}
         id='spline-clouds'
-        scene='https://draft.spline.design/WpGfUOX7-iXG2VgG/scene.splinecode'
+        scene='https://draft.spline.design/GkT0VW68VktYVduV/scene.splinecode'
       />
     </Container>
   );
