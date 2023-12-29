@@ -1,0 +1,31 @@
+.loader {
+  z-index: 10;
+  height: 50px;
+  animation: load 2s ease-in-out 0s infinite alternate;
+  transition: 500ms;
+}
+
+.loader:first-child {
+  animation: move 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes load {
+  0% {
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: rotate(180deg) translateX(10px) scale(1.5);
+  }
+}
+
+@keyframes move {
+  0% {
+    border-radius: 50%;
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(-50px) rotate(180deg) translateX(10px) scale(2);
+  }
+}
