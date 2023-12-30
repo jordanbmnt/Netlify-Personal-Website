@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoadingVisible(false);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
@@ -20,6 +20,7 @@ function App() {
       <MainPage />
       <HeroPage />
       <ContactPage />
+      <p>Illustration by <a href="https://icons8.com/illustrations/author/GrbQqWBEhaDS">Liam Moore</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
     </div>
   );
 }
