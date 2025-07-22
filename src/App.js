@@ -14,15 +14,24 @@ function App() {
     }, 2000);
   }, []);
 
-  return (
-    <div className='App'>
-      {loadingVisible && <LoadingPage />}
-      <MainPage />
-      <HeroPage />
-      <ContactPage />
-      <p>Illustration by <a href="https://icons8.com/illustrations/author/GrbQqWBEhaDS">Liam Moore</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
-    </div>
-  );
+  return loadingVisible ?  (
+      <div className='App'>
+        <LoadingPage />
+      </div>
+    ) : (
+      <div className='App'>
+        <MainPage />
+        <HeroPage />
+        <ContactPage />
+        <p>
+          Illustration by{" "}
+          <a href='https://icons8.com/illustrations/author/GrbQqWBEhaDS'>
+            Liam Moore
+          </a>{" "}
+          from <a href='https://icons8.com/illustrations'>Ouch!</a>
+        </p>
+      </div>
+    );
 }
 
 export default App;
