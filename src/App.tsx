@@ -12,7 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <NavBar />
+        <div style={{ height: '80px', overflow: 'hidden' }}>
+          <NavBar />
+        </div>
 
         <Routes>
           <Route path="/" element={<Home />} />
