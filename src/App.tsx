@@ -12,16 +12,18 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div style={{ height: '80px', overflow: 'hidden' }}>
+        <div className='nav-bar-container'>
           <NavBar />
         </div>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className='routes-container'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );

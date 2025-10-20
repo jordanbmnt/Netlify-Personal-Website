@@ -1,3 +1,50 @@
 .App {
+  display: flex;
   text-align: center;
+  height: 100dvh;
+  flex-flow: column;
+  overflow-y: auto;
+}
+
+.nav-bar-container {
+  height: 80px;
+  width: 100dvw;
+  overflow: hidden;
+  position: fixed;
+}
+
+.routes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 10dvw;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .App {
+    flex-flow: column-reverse;
+  }
+
+  .nav-bar-container {
+    justify-content: flex-end;
+  }
+
+  .routes-container {
+    margin-bottom: 100px;
+    padding: 0 20dvw;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 600px) {
+  .routes-container {
+    margin-top: 80px;
+    justify-content: flex-start;
+  }
+
+  .nav-bar-container {
+    justify-content: flex-end;
+  }
 }
