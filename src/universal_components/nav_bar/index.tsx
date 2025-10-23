@@ -10,26 +10,22 @@ export const NavBar = () => {
     padding: '5px 10px',
   });
 
+  const navigationList = [
+    { to: '/', label: 'Home', icon: <Home size={20} /> },
+    { to: '/settings', label: 'Settings', icon: <Settings size={20} /> },
+    { to: '/contact', label: 'Contact', icon: <Contact size={20} /> },
+  ]
+
   return (
     <nav style={{ marginBottom: '20px' }}>
-      <NavLink to="/" style={navLinkStyles}>
-        <div className="nav-button">
-          <Home className="nav-icon" size={20} />
-          <p>Home</p>
-        </div>
-      </NavLink>
-      <NavLink to="/settings" style={navLinkStyles}>
-        <div className="nav-button">
-          <Settings className="nav-icon" size={20} />
-          <p>Settings</p>
-        </div>
-      </NavLink>
-      <NavLink to="/contact" style={navLinkStyles}>
-        <div className="nav-button">
-          <Contact className="nav-icon" size={20} />
-          <p>Contact</p>
-        </div>
-      </NavLink>
+      {navigationList.map(({ to, label, icon }) => (
+        <NavLink key={to} to={to} style={navLinkStyles}>
+          <div className="nav-button">
+            {icon}
+            <p>{label}</p>
+          </div>
+        </NavLink>
+      ))}
     </nav>
   );
 }
