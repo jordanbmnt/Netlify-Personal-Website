@@ -4,6 +4,7 @@
   height: 100dvh;
   flex-flow: column;
   overflow-y: auto;
+  background-color: #fff5fe;
 }
 
 .nav-bar-container {

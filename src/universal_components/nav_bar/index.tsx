@@ -14,19 +14,19 @@ export const NavBar = () => {
     <nav style={{ marginBottom: '20px' }}>
       <NavLink to="/" style={navLinkStyles}>
         <div className="nav-button">
-          <Home size={20} />
+          <Home className="nav-icon" size={20} />
           <p>Home</p>
         </div>
       </NavLink>
       <NavLink to="/settings" style={navLinkStyles}>
         <div className="nav-button">
-          <Settings size={20} />
+          <Settings className="nav-icon" size={20} />
           <p>Settings</p>
         </div>
       </NavLink>
       <NavLink to="/contact" style={navLinkStyles}>
         <div className="nav-button">
-          <Contact size={20} />
+          <Contact className="nav-icon" size={20} />
           <p>Contact</p>
         </div>
       </NavLink>
