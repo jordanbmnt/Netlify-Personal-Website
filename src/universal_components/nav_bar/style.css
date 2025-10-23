@@ -6,11 +6,13 @@ nav {
   width: fit-content;
   margin: 5px auto;
   border-radius: 1rem;
-  background: linear-gradient(145deg, #ffffff, #e6dde5);
+  background: linear-gradient(145deg, #ffffff89, #e6dde590);
   box-shadow: 5px 5px 10px #d9d0d8,
     -5px -5px 10px #ffffff;
   padding: 0 0.5rem 0.5rem;
   border: 1.2px solid #ffffff00;
+  backdrop-filter: blur(5px) saturate(1.8) brightness(1.1);
+  -webkit-backdrop-filter: blur(5px) saturate(1.8) brightness(1.1);
 }
 
 .nav-button {
@@ -28,6 +30,8 @@ nav {
   opacity: 1;
   border: 1px solid #e9e9e9;
   text-shadow: 0px 0px 3px #cfc6ce00;
+  backdrop-filter: blur(12px) saturate(1.8) brightness(1.1);
+  -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.1);
 }
 
 .nav-icon {
