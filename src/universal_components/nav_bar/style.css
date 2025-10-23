@@ -38,7 +38,6 @@ nav {
   scale: 1.1;
   padding: 0.2rem 1rem 0.1rem;
   border: 3px solid #ffffff00;
-  background: linear-gradient(145deg, #ffffff, #e6dde5);
   box-shadow: 9px 9px 5px #cfc6ce,
     -5px -5px 5px #ffffff;
   border-radius: 15px;
@@ -64,7 +63,6 @@ nav {
 
 nav:hover .nav-button:not(:hover) {
   scale: 0.9;
-  background: linear-gradient(145deg, #ffffff, #e6dde5);
   box-shadow: 5px 5px 10px #f0e6ef,
     -3px -3px 10px #ffffff;
 }

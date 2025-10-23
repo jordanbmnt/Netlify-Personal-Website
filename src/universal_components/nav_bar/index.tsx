@@ -4,10 +4,10 @@ import { Contact, Home, Settings } from "lucide-react";
 
 export const NavBar = () => {
   const navLinkStyles = ({ isActive }: { isActive: boolean }) => ({
-    color: isActive ? '#007bff' : '#333',
+    color: isActive ? 'hsl(306, 100%, 65%)' : 'hsl(306, 100%, 5%)',
     textDecoration: 'none',
     fontWeight: isActive ? 'bold' : 'normal',
-    padding: '5px 10px'
+    padding: '5px 10px',
   });
 
   return (
