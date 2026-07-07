@@ -1,29 +1,13 @@
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  margin: 5px auto;
-  border-radius: 1rem;
-  background: linear-gradient(145deg, #ffffff89, #e6dde590);
-  box-shadow: 5px 5px 10px #d9d0d8,
-    -5px -5px 10px #ffffff;
-  padding: 0 0.5rem 0.5rem;
-  border: 1.2px solid #ffffff00;
-  backdrop-filter: blur(5px) saturate(1.8) brightness(1.1);
-  -webkit-backdrop-filter: blur(5px) saturate(1.8) brightness(1.1);
-}
-
 .nav-button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90px;
   justify-content: center;
   scale: 1;
   transition: 400ms cubic-bezier(0.175, 1.885, 0.32, 1.275);
   border-radius: 10px;
-  background: linear-gradient(145deg, #ffffff, #e6dde5);
+  background: linear-gradient(145deg, #ffffffa0, #e6dde5a0);
   box-shadow: 5px 5px 10px #f5ebf4,
     -3px -3px 10px #ffffff;
   padding: 0.2rem 0.3rem 0.1rem;
@@ -41,11 +25,12 @@ nav {
 .nav-button:hover {
   scale: 1.1;
   padding: 0.2rem 1rem 0.1rem;
-  border: 3px solid #ffffff00;
+  border: 3.4px solid #ffffff00;
   box-shadow: 9px 9px 5px #cfc6ce,
     -5px -5px 5px #ffffff;
   border-radius: 15px;
   text-shadow: 2px 2px 0px #cfc6cea6;
+  transform: translateY(-10px);
 }
 
 .nav-button:hover .nav-icon {
@@ -69,4 +54,20 @@ nav:hover .nav-button:not(:hover) {
   scale: 0.9;
   box-shadow: 5px 5px 10px #f0e6ef,
     -3px -3px 10px #ffffff;
+}
+
+@media (max-width: 600px) {
+  .nav-button {
+    width: calc(100dvw/6);
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-button {
+    width: calc(100dvw/12);
+  }
+
+  .nav-button:hover {
+    transform: translateY(5px);
+  }
 }
