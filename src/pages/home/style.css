@@ -107,7 +107,7 @@ img {
 }
 
 .index .head>div {
-  width: 400px;
+  width: 300px;
   height: 100px;
 }
 
@@ -140,9 +140,12 @@ img {
 
 .index .head>div:nth-child(2)>p {
   border-radius: 12px;
-  padding: 4px 9px;
+  padding: 4px 13px;
   font-size: 0.78rem;
   font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  background-color: transparent;
 }
 
 .index .head>div:nth-child(2)>.active {

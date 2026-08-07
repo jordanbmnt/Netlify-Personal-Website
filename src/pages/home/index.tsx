@@ -1,8 +1,15 @@
 import { LucideArrowRight } from "lucide-react";
 import heroImage from "../../assets/hero-image.png"
 import "./style.css"
+import { useState } from "react";
 
 export const Home = () => {
+  const sections = [
+    { id: 'all' },
+    { id: 'portraiture' },
+    { id: 'abstract' },
+  ]
+  const [activeSection, setActiveSection] = useState('all');
 
   return (
     <div className="page">
@@ -30,9 +37,7 @@ export const Home = () => {
             <h3>Selected Works</h3>
           </div>
           <div>
-            <p className="active">ALL</p>
-            <p>PORTRAITURE</p>
-            <p>ABSTRACT</p>
+            {sections.map(({ id }) => (<p className={activeSection == id ? 'active' : ''} onClick={() => setActiveSection(id)}>{id.toUpperCase()}</p>))}
           </div>
         </div>
       </div>
