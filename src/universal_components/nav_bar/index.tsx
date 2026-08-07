@@ -17,7 +17,7 @@ export const NavBar = () => {
   ]
 
   return (
-    <nav style={{ marginBottom: '20px' }}>
+    <nav>
       <div className="logo">
         <img src="/logo.png" alt="soy_jimb logo" />
         <h3>Soy Jimb</h3>
