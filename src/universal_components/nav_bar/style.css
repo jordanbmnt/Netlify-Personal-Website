@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid var(--breaker-color);
+}
+
+nav * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-smooth);
+}
+
+.logo img {
+  width: 40px;
+}

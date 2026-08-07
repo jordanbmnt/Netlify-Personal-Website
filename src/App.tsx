@@ -11,11 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div className='nav-bar-container'>
-          <div></div>
-          <NavBar />
-          <div></div>
-        </div>
+        <NavBar />
 
         <div className='routes-container'>
           <Routes>
