@@ -23,6 +23,19 @@ export const Home = () => {
         </div>
       </div>
       <hr />
+      <div className="index">
+        <div className="head">
+          <div className="title">
+            <p>INDEX</p>
+            <h3>Selected Works</h3>
+          </div>
+          <div>
+            <p className="active">ALL</p>
+            <p>PORTRAITURE</p>
+            <p>ABSTRACT</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

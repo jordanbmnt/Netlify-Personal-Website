@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 73dvh;
   gap: 5%;
 }
 
@@ -98,4 +97,54 @@ img {
 .info h3 {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.index .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.index .head>div {
+  width: 400px;
+  height: 100px;
+}
+
+.index .head .title p::before {
+  content: "";
+  min-width: 30px;
+  max-height: 1px;
+  border-top: 0.5px solid var(--body-color);
+}
+
+.index .head .title p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+}
+
+.index .head .title h3 {
+  font-size: 2.6rem;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.index .head>div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.index .head>div:nth-child(2)>p {
+  border-radius: 12px;
+  padding: 4px 9px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.index .head>div:nth-child(2)>.active {
+  background-color: var(--tertiary);
 }

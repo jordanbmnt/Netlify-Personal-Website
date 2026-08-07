@@ -9,7 +9,7 @@
   --on-surface: #2c2a29;
   --primary: #2c2a29;
   --secondary: #A89B91;
-  --tertiary: #D6CEC7;
+  --tertiary: #d6cec7af;
   --neutral: #EAE5E1;
   --surface-container-low: #f8f3ef;
   --surface-container-high: #f0ebe7;
@@ -66,7 +66,8 @@ h5 {
 }
 
 .page>div {
-  margin: 5dvh 0px;
+  padding: 5dvh 0px;
+  min-height: 73dvh;
 }
 
 hr {
